@@ -1,0 +1,44 @@
+{% for data in datas %}
+{% assign i = forloop.index0 %}
+
+   <tr class="item">
+     {% if product.metafields.data.style[i] != blank %}
+      <td>{{product.metafields.data.style[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+     {% if product.metafields.data.noo[i] != blank %}
+      <td>{{product.metafields.data.noo[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+     {% if product.metafields.data.external[i] != blank %}
+      <td>{{product.metafields.data.external[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+     {% if product.metafields.data.internal[i] != blank %}
+      <td>{{product.metafields.data.internal[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+     {% if product.metafields.data.EDP[i] != blank %}
+      <td>{{product.metafields.data.EDP[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+      {% if product.metafields.data.EDP2[i] != blank %}
+      <td>{{product.metafields.data.EDP2[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+       {% if product.metafields.data.PcBox[i] != blank %}
+      <td>{{product.metafields.data.PcBox[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+      {% if product.metafields.data.EDP3[i] != blank %}
+      <td>{{product.metafields.data.EDP3[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+      {% if product.metafields.data.PcBox2[i] != blank %}
+      <td>{{product.metafields.data.PcBox2[i]}}</td>
+     {% else %}<td> --- </td>
+     {% endif %}
+   </tr>
+
+{% endfor %}
+    
