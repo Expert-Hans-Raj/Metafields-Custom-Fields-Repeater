@@ -1,3 +1,4 @@
+{% assign datas = product.metafields.data.style %}
 {% for data in datas %}
 {% assign i = forloop.index0 %}
 
